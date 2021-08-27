@@ -8,4 +8,51 @@ html, body {
   margin: auto;
 }
 
+.container {
+  margin: 1rem;
+}
+
+.topFrom {
+  padding: 1rem 10px;
+  border: 1px dashed #555;
+}
+.topFrom input {
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}
+.topFrom textarea {
+  width: calc(100% - 10px );
+  padding: 5px;
+  resize: none;
+}
+
+.massage {
+  padding: 0.5rem 0.5rem;
+  border-bottom: 1px solid #000;
+}
+.massage .mailLink a {
+  text-decoration: none;
+  color: #333;
+}
+.massage .mailLink a:hover {
+  color: darkblue;
+}
+.massage .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0.3rem 0;
+}
+.massage .text {
+  margin-top: 0.5rem;
+}
+.massage .times {
+  color: #aaa;
+  text-align: right;
+}
+.massage .times span {
+  margin-right: 0.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */

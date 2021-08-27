@@ -6,3 +6,50 @@ html,body{
   max-width: 1240px;
   margin:auto;
 }
+.container{
+  margin:1rem;
+  
+}
+.topFrom{
+  padding: 1rem 10px;
+  border: 1px dashed #555;
+  & input{
+    padding:.2rem .5rem;
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+  }
+  & textarea{
+    width: calc(100% - 10px );
+    padding:5px;
+    resize: none;
+  }
+}
+.massage{
+  padding:.5rem .5rem;
+  border-bottom: 1px solid #000;
+  & .mailLink{
+    & a{
+      text-decoration:none;
+      color: #333;
+    }
+    & a:hover{
+      color:darkblue;
+    }
+  }
+  & .name{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin:.3rem 0;
+  }
+  & .text{
+    margin-top: .5rem;
+  }
+  & .times{
+    color:#aaa;
+    text-align: right;
+    & span{
+      margin-right: .5rem;
+    }
+  }  
+}

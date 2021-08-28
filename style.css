@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -22,36 +23,66 @@ html, body {
   margin-right: 1rem;
 }
 .topFrom textarea {
-  width: calc(100% - 10px );
+  width: 100%;
   padding: 5px;
   resize: none;
 }
 
-.massage {
+#edit_page {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  transform: translateX(-100%);
+}
+#edit_page textarea {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 50vh;
+  resize: none;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+}
+#edit_page button {
+  font-size: large;
+}
+
+.message {
   padding: 0.5rem 0.5rem;
   border-bottom: 1px solid #000;
 }
-.massage .mailLink a {
+.message .mailLink a {
   text-decoration: none;
-  color: #333;
+  color: #ccc;
 }
-.massage .mailLink a:hover {
-  color: darkblue;
+.message .mailLink a:hover {
+  color: #555;
 }
-.massage .name {
+.message .name {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin: 0.3rem 0;
 }
-.massage .text {
+.message .name .edit:hover {
+  cursor: pointer;
+}
+.message .text {
   margin-top: 0.5rem;
 }
-.massage .times {
+.message .times {
   color: #aaa;
   text-align: right;
 }
-.massage .times span {
+.message .times span {
   margin-right: 0.5rem;
 }
 

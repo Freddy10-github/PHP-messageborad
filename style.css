@@ -28,33 +28,6 @@ html, body {
   resize: none;
 }
 
-#edit_page {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 1rem;
-  top: 0;
-  left: 0;
-  transition: all 0.3s;
-  transform: translateX(-100%);
-}
-#edit_page textarea {
-  margin-bottom: 1rem;
-  width: 100%;
-  height: 50vh;
-  resize: none;
-  border-radius: 20px;
-  padding: 10px;
-  outline: none;
-}
-#edit_page button {
-  font-size: large;
-}
-
 .message {
   padding: 0.5rem 0.5rem;
   border-bottom: 1px solid #000;
@@ -84,6 +57,34 @@ html, body {
 }
 .message .times span {
   margin-right: 0.5rem;
+  font-size: xx-small;
+}
+.message .edit_page {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  transform: translateX(-100%);
+}
+.message .edit_page textarea {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 50vh;
+  resize: none;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+}
+.message .edit_page button {
+  font-size: large;
 }
 
 /*# sourceMappingURL=style.css.map */

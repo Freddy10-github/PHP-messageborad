@@ -25,34 +25,7 @@ html,body{
     resize: none;
   }
 }
-#edit_page{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.7);
-  padding:1rem;
-  top:0;
-  left: 0;
-  transition: all .3s;
-  transform: translateX(-100%);
-  & textarea{
-    margin-bottom: 1rem;
-    width: 100%;
-    height: 50vh;
-    resize: none;
-    border-radius: 20px;
-    padding: 10px;
-    
-    outline: none;
-  }
-  & button{
-    font-size: large;
-  }
 
-}
 
 .message{
   padding:.5rem .5rem;
@@ -83,6 +56,36 @@ html,body{
     text-align: right;
     & span{
       margin-right: .5rem;
+      font-size:xx-small;
     }
+  }
+.edit_page{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    padding:1rem;
+    top:0;
+    left: 0;
+    transition: all .3s;
+    transform: translateX(-100%);
+    & textarea{
+      margin-bottom: 1rem;
+      width: 100%;
+      height: 50vh;
+      resize: none;
+      border-radius: 20px;
+      padding: 10px;
+      
+      outline: none;
+    }
+    & button{
+      font-size: large;
+    }
+  
   }
 }
